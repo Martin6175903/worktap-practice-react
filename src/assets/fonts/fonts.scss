@@ -1,0 +1,25 @@
+$montserrat-weights: (
+  Thin: 100,
+  ExtraLight: 200,
+  Light: 300,
+  Regular: 400,
+  Medium: 500,
+  SemiBold: 600,
+  Bold: 700,
+  ExtraBold: 800,
+  Black: 900,
+);
+
+@mixin font-face($weight-name, $font-weight) {
+  font-family: 'Montserrat';
+  src: url('./Montserrat-#{$weight-name}.ttf') format('truetype');
+  font-weight: $font-weight;
+  font-style: normal;
+  font-display: swap;
+}
+
+@each $name, $weight in $montserrat-weights {
+  @font-face {
+    @include font-face($name, $weight);
+  }
+}
