@@ -1,5 +1,5 @@
 @use 'sass:map';
-@use './variables/typography' as *;
+@use './variables' as *;
 
 $typography-map: (
   h1: (
@@ -36,7 +36,7 @@ $typography-map: (
   ),
 );
 
-@mixin typography($variant, $font-weight: 400, $color: null) {
+@mixin typography($variant, $font-weight: 500, $color: null) {
   $styles: map.get($typography-map, $variant);
 
   @if not $styles {

@@ -1,0 +1,18 @@
+@use 'assets/styles/mixins' as *;
+
+.button {
+  padding: 18px 80px;
+  border-radius: 50px;
+
+  @include typography(xl, 600);
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.secondary {
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}

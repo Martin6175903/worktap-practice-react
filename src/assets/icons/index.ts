@@ -1,3 +1,4 @@
-export { default as Logo } from './logo.svg?react';
-export { default as ReactLogo } from './react.svg?react';
-export { default as ViteLogo } from './vite.svg?react';
+export { default as FavoriteMajorIcon } from './favorite-major.svg?react';
+export { default as LogoIcon } from './logo.svg?react';
+export { default as MessagesIcon } from './messages.svg?react';
+export { default as NotificationsIcon } from './notifications.svg?react';
