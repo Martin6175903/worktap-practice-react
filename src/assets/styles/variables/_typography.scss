@@ -1,0 +1,35 @@
+@use './breakpoints' as *;
+
+:root {
+  --headings-h1-font-size: 24px;
+  --headings-h1-line-height: 29px;
+  --headings-h2-font-size: 20px;
+  --headings-h2-line-height: 24px;
+  --headings-h3-font-size: 18px;
+  --headings-h3-line-height: 22px;
+  --headings-h4-font-size: 16px;
+  --headings-h4-line-height: 20px;
+  --headings-h5-font-size: 14px;
+  --headings-h5-line-height: 17px;
+  --text-xl-font-size: 16px;
+  --text-xl-line-height: 20px;
+  --text-l-font-size: 12px;
+  --text-l-line-height: 15px;
+  --text-m-font-size: 10px;
+  --text-m-line-height: 12px;
+
+  @include desk-sm {
+    --headings-h1-font-size: 36px;
+    --headings-h1-line-height: 44px;
+    --headings-h2-font-size: 30px;
+    --headings-h2-line-height: 37px;
+    --headings-h3-font-size: 24px;
+    --headings-h3-line-height: 29.3px;
+    --headings-h4-font-size: 20px;
+    --headings-h4-line-height: 24px;
+    --headings-h5-font-size: 18px;
+    --headings-h5-line-height: 21.9px;
+    --text-l-font-size: 14px;
+    --text-l-line-height: 17px;
+  }
+}

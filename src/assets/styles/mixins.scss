@@ -1,0 +1,53 @@
+@use 'sass:map';
+@use './variables/typography' as *;
+
+$typography-map: (
+  h1: (
+    font-size: var(--headings-h1-font-size),
+    line-height: var(--headings-h1-line-height),
+  ),
+  h2: (
+    font-size: var(--headings-h2-font-size),
+    line-height: var(--headings-h2-line-height),
+  ),
+  h3: (
+    font-size: var(--headings-h3-font-size),
+    line-height: var(--headings-h3-line-height),
+  ),
+  h4: (
+    font-size: var(--headings-h4-font-size),
+    line-height: var(--headings-h4-line-height),
+  ),
+  h5: (
+    font-size: var(--headings-h5-font-size),
+    line-height: var(--headings-h5-line-height),
+  ),
+  xl: (
+    font-size: var(--text-xl-font-size),
+    line-height: var(--text-xl-line-height),
+  ),
+  l: (
+    font-size: var(--text-l-font-size),
+    line-height: var(--text-l-line-height),
+  ),
+  m: (
+    font-size: var(--text-m-font-size),
+    line-height: var(--text-m-line-height),
+  ),
+);
+
+@mixin typography($variant, $font-weight: 400, $color: null) {
+  $styles: map.get($typography-map, $variant);
+
+  @if not $styles {
+    @error "Unknown typography variant: #{$variant}";
+  }
+
+  font-size: map.get($styles, font-size);
+  line-height: map.get($styles, line-height);
+  font-weight: $font-weight;
+
+  @if $color {
+    color: $color;
+  }
+}

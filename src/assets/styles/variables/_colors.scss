@@ -1,0 +1,28 @@
+:root {
+  --white-base: 246,250,253;
+  --white: rgba(var(--white-base), 1);
+  --super-light-gray-base: 247, 246, 255;
+  --super-light-gray: rgba(var(--super-light-gray-base), 1);
+  --light-gray-base: 242, 240, 254;
+  --light-gray: rgba(var(--light-gray-base), 1);
+  --medium-gray-base: 235, 232, 255;
+  --medium-gray: rgba(var(--medium-gray-base), 1);
+  --gray-base: 176, 170, 208;;
+  --gray: rgba(var(--gray-base), 1);
+  --light-green-base: 215, 255, 236;;
+  --light-green: rgba(var(--light-green-base), 1);
+  --green-base: 29, 191, 115;
+  --green: rgba(var(--green-base), 1);
+  --light-orange-base: 255, 237, 221;
+  --light-orange: rgba(var(--light-orange-base), 1);
+  --orange-base: 251, 164, 87;
+  --orange: rgba(var(--orange-base), 1);
+  --dark-gray-base: 101, 96, 132;
+  --dark-gray: rgba(var(--dark-gray-base), 1);
+  --black-base: 34, 34, 34;
+  --black: rgba(var(--black-base), 1);
+  --red-base: 255, 67, 67;
+  --red: rgba(var(--red-base), 1);
+  --light-red-base: 255, 219, 219;
+  --light-red: rgba(var(--light-red-base), 1);
+}

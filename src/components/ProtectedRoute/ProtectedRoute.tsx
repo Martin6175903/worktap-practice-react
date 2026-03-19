@@ -1,15 +1,13 @@
-import { useEffect } from 'react';
+import { useAuth } from 'hooks';
+import { useLayoutEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router';
 import { routes } from 'utils/core/routes';
 
-type ProtectedRouteProps = {
-  isAuth?: boolean;
-};
-
-export const ProtectedRoute = ({ isAuth = false }: ProtectedRouteProps) => {
+export const ProtectedRoute = () => {
+  const { isAuth } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isAuth) {
       navigate(routes.auth);
     }
